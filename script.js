@@ -24,3 +24,11 @@ function colorThree() {
   buttonNode.removeEventListener("click", colorThree);
   buttonNode.addEventListener("click", color);
 }
+
+function asd() {
+  if (buttonNode) {
+    buttonNode.click();
+  }
+}
+
+setInterval(asd, 1000);
