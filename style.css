@@ -1,8 +1,9 @@
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  margin: 200px auto;
+body {
+  width: 600px;
+  background-color: rgb(213, 213, 213);
 }
-.js-input {
+.js-list {
+}
+.red {
+  color: red;
 }

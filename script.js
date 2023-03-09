@@ -1,11 +1,13 @@
-const inputNode = document.querySelector(".js-input");
-let regex = /[0-9]/g;
+const listNode = document.querySelector(".js-list");
 
-/*inputNode.oninput = function() {
-  this.value = this.value.replace(regex, "")
-}*/
+listNode.addEventListener("mouseover", (event) => {
+  if (event.target.closest("li")) {
+    event.target.style.color = "black";
+  }
+});
 
-inputNode.addEventListener("input", (event) => {
-  event.target.value = event.target.value.replace(regex, "");
-  console.log(event.target.value);
+listNode.addEventListener("mouseout", (event) => {
+  if (event.target.closest("li")) {
+    event.target.style.color = "red";
+  }
 });
