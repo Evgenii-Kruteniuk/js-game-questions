@@ -1,9 +1,6 @@
-body {
-  width: 600px;
-  background-color: rgb(213, 213, 213);
-}
-.js-list {
-}
-.red {
-  color: red;
+body,
+input,
+select,
+textarea {
+  font-size: 34px;
 }

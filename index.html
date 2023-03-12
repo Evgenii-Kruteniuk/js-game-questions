@@ -8,41 +8,45 @@
     <title>Document</title>
   </head>
   <body>
-    <ol class="js-list">
-      Список книг, которые должен прочитать каждый человек
-      <li class="red">
-        Толстой Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-        magnam accusamus cumque possimus deleniti eum nam non nulla
-        necessitatibus optio. Praesentium facere iusto possimus. Aliquam non
-        mollitia velit alias molestiae.
-      </li>
-      <li class="red">
-        Пушкин Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Dignissimos, impedit facilis sint magni cumque nisi numquam quibusdam?
-        Maxime, deleniti voluptatum quod sequi veritatis, ipsam magnam incidunt
-        ipsum optio enim rerum impedit accusamus, molestiae ea culpa inventore
-        vero possimus. Voluptate, nostrum!
-      </li>
-      <li class="red">
-        Маяковский Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Deserunt corrupti delectus sit aspernatur nostrum aliquam error
-        reprehenderit. Consequatur, voluptate nihil?
-      </li>
-      <li class="red">
-        Лермонтов Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Beatae quam quisquam suscipit eum alias ipsum fugiat molestias, veniam
-        necessitatibus voluptates accusantium nostrum fuga harum omnis doloribus
-        qui consequuntur quidem placeat!
-      </li>
-      <li class="red">Гоголь Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, reiciendis ad possimus vero aspernatur, expedita tempora recusandae accusamus optio blanditiis soluta! Ullam sunt assumenda quis est debitis repellendus hic. Distinctio obcaecati fugit soluta eveniet aspernatur ipsa sapiente omnis placeat culpa.</li>
-      <li class="red">
-        Достоевский Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Totam consequatur, ad harum incidunt, sapiente nobis, laborum sed
-        consequuntur voluptatum amet quia. Accusamus praesentium obcaecati
-        voluptatem nisi, atque placeat doloribus dignissimos reprehenderit quod,
-        nesciunt expedita quos tempora aut quaerat earum ut.
-      </li>
-    </ol>
+    <form action="" method="POST">
+      <input type="password" />
+      <label for="userName">
+        userName: <input type="text" id="userName" name="userName" />
+      </label>
+      <label for="userMail">
+        mail: <input type="text" id="userMail" name="userMail" />
+      </label>
+      <div>
+        <label>
+          orc <input type="radio" value="orc" name="race" checked />
+        </label>
+        <label> elf <input type="radio" value="elf" name="race" /> </label>
+        <label> human <input type="radio" value="human" name="race" /> </label>
+      </div>
+      <div>
+        <label>
+          male <input type="radio" value="male" name="gender" checked />
+        </label>
+        <label
+          >female <input type="radio" value="female" name="gender"
+        /></label>
+      </div>
+      <select name="country" id="country">
+        <option value="Azerot">Azerot</option>
+        <option value="Germany">Germany</option>
+        <option value="Russia">Russia</option>
+      </select>
+      <p>You reviev:</p>
+      <textarea name="reviev" id="reviev"></textarea>
+      <div>
+        <label>
+          Принимаю условия <input type="checkbox" name="adree" checked />
+        </label>
+        <label> За орду!! <input type="checkbox" name="orde" /> </label>
+      </div>
+      <input type="submit" id="sendForm" />
+    </form>
+    <div id="content"></div>
     <script src="script.js"></script>
   </body>
 </html>
