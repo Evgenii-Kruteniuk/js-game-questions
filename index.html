@@ -5,48 +5,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Игра в вопросы</title>
   </head>
   <body>
-    <form action="" method="POST">
-      <input type="password" />
-      <label for="userName">
-        userName: <input type="text" id="userName" name="userName" />
-      </label>
-      <label for="userMail">
-        mail: <input type="text" id="userMail" name="userMail" />
-      </label>
-      <div>
-        <label>
-          orc <input type="radio" value="orc" name="race" checked />
-        </label>
-        <label> elf <input type="radio" value="elf" name="race" /> </label>
-        <label> human <input type="radio" value="human" name="race" /> </label>
+    <div class="wrapper">
+      <div class="block">
+        <form action="#" class="form">
+          <div class="question">
+            <p>1. Какая планета самая горячая?</p>
+            <label for=""
+              ><input
+                type="radio"
+                name="oneQuestion"
+                value="false"
+              />Меркурий</label
+            >
+
+            <label for=""
+              ><input
+                type="radio"
+                name="oneQuestion"
+                value="true"
+              />Венера</label
+            >
+            <label for=""
+              ><input
+                type="radio"
+                name="oneQuestion"
+                value="false"
+              />Сатурн</label
+            >
+            <label for=""
+              ><input
+                type="radio"
+                name="oneQuestion"
+                value="false"
+              />Марс</label
+            >
+          </div>
+
+          <div class="question">
+            <p>2. Какая самая редкая группа крови?</p>
+            <label for=""
+              ><input type="radio" name="twoQuestion" value="false" />I
+              группа</label
+            >
+            <label for=""
+              ><input type="radio" name="twoQuestion" value="false" />II
+              группа</label
+            >
+            <label for=""
+              ><input type="radio" name="twoQuestion" value="false" />III
+              группа</label
+            >
+            <label for=""
+              ><input type="radio" name="twoQuestion" value="true" />IV
+              группа</label
+            >
+          </div>
+          <div class="question">
+            <p>3. Fe — это символ какого химического элемента?</p>
+            <label for=""
+              ><input
+                type="radio"
+                name="threeQuestion"
+                value="false"
+              />Цинк</label
+            >
+            <label for=""
+              ><input
+                type="radio"
+                name="threeQuestion"
+                value="false"
+              />Водород</label
+            >
+            <label for=""
+              ><input type="radio" name="threeQuestion" value="true" />
+              Железо</label
+            >
+            <label for=""
+              ><input
+                type="radio"
+                name="threeQuestion"
+                value="false"
+              />Фтор</label
+            >
+          </div>
+          <div class="question">
+            <p>4. На каком языке говорит больше всего людей на Земле?</p>
+            <label for=""
+              ><input
+                type="radio"
+                name="fourQuestion"
+                value="false"
+              />английский</label
+            >
+            <label for=""
+              ><input
+                type="radio"
+                name="fourQuestion"
+                value="true"
+              />китайский</label
+            >
+            <label for=""
+              ><input type="radio" name="fourQuestion" value="false" />
+              испанский</label
+            >
+            <label for=""
+              ><input
+                type="radio"
+                name="fourQuestion"
+                value="false"
+              />арабский</label
+            >
+          </div>
+          <div class="question">
+            <p>5. Сколько сердец у осьминога?</p>
+            <label for=""
+              ><input type="radio" name="fiveQuestion" value="false" />1</label
+            >
+            <label for=""
+              ><input type="radio" name="fiveQuestion" value="false" />2</label
+            >
+            <label for=""
+              ><input type="radio" name="fiveQuestion" value="true" /> 3</label
+            >
+            <label for=""
+              ><input type="radio" name="fiveQuestion" value="false" />4</label
+            >
+          </div>
+        </form>
+
+        <button id="resultButton">Результат</button>
       </div>
-      <div>
-        <label>
-          male <input type="radio" value="male" name="gender" checked />
-        </label>
-        <label
-          >female <input type="radio" value="female" name="gender"
-        /></label>
-      </div>
-      <select name="country" id="country">
-        <option value="Azerot">Azerot</option>
-        <option value="Germany">Germany</option>
-        <option value="Russia">Russia</option>
-      </select>
-      <p>You reviev:</p>
-      <textarea name="reviev" id="reviev"></textarea>
-      <div>
-        <label>
-          Принимаю условия <input type="checkbox" name="adree" checked />
-        </label>
-        <label> За орду!! <input type="checkbox" name="orde" /> </label>
-      </div>
-      <input type="submit" id="sendForm" />
-    </form>
-    <div id="content"></div>
+      <div class="result"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

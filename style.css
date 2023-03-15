@@ -1,6 +1,68 @@
-body,
-input,
-select,
-textarea {
-  font-size: 34px;
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  background-color: rgb(219, 220, 220);
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.block {
+  padding: 30px;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  margin: 0 auto;
+}
+#resultButton {
+  margin: 60px auto;
+  font-size: 20px;
+  height: 60px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 1px rgb(78, 79, 78);
+  background-color: rgb(177, 160, 111);
+}
+#resultButton:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 0px 2px 1px rgb(172, 172, 174);
+}
+p {
+  font-weight: 800;
+  font-size: 35px;
+}
+.result {
+  visibility: hidden;
+  position: absolute;
+}
+
+.resultVisible {
+  visibility: visible;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(35, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: red;
+  transition: 2s;
 }
